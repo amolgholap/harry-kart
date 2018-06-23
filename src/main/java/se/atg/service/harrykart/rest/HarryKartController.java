@@ -19,8 +19,6 @@ public class HarryKartController {
 	
     @RequestMapping(method = RequestMethod.POST, path = "/play", consumes = "application/xml", produces = "application/json")
     public RankingKart playHarryKart(@RequestBody HarryKart harryKart) {
-    	//int numberOfLoops=harryKart.getNumberOfLoops();
-    	
         return playKartService.getRanking(harryKart);
     }
 

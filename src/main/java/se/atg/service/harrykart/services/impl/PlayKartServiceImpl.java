@@ -18,7 +18,7 @@ public class PlayKartServiceImpl implements PlayKartService{
 
 	@Override
 	public RankingKart getRanking(HarryKart harryKart) {
-		/*RankingKart rankingKart= new RankingKart();
+		RankingKart rankingKart= new RankingKart();
 		final List<Ranking> horseRankingKart= new ArrayList<>();
 		harryKart.getStartList().forEach(participant ->{
 			Ranking horseRank = new Ranking();
@@ -28,7 +28,7 @@ public class PlayKartServiceImpl implements PlayKartService{
 			horseRank.setPoints(participant.getBaseSpeed());//base Speed
 			horseRankingKart.add(horseRank);
 		});
-		for(int i=0;i<harryKart.getNumberOfLoops();i++) {
+		for(int i=0;i<(harryKart.getNumberOfLoops()-1);i++) {
 			final int loopNumber=i;
 			Loop loop= harryKart.getPowerUps().get(loopNumber);
 			loop.getLane().forEach(lane->{
@@ -48,7 +48,6 @@ public class PlayKartServiceImpl implements PlayKartService{
 		
 		//position calculation
 		horseRankingKart.sort(Comparator.reverseOrder());
-		System.out.println("After Sorting");
 		List<RankingResponse> finalRankings= new ArrayList<>();
 		for(int i=0;i<3;i++) {
 			RankingResponse rnkResp= new RankingResponse();
@@ -57,8 +56,7 @@ public class PlayKartServiceImpl implements PlayKartService{
 			finalRankings.add(rnkResp);
 		}
 		rankingKart.setRanking(finalRankings);
-		return rankingKart;*/
-		return null;
+		return rankingKart;
 	}
 
 }
