@@ -1,6 +1,6 @@
 package se.atg.service.harrykart.model;
 
-public class Ranking implements Comparable<Ranking>{
+public class RankingDecider implements Comparable<RankingDecider>{
 
 	private int position;
 	private int points;
@@ -20,7 +20,7 @@ public class Ranking implements Comparable<Ranking>{
 		this.horse = horse;
 	}
 	@Override
-	public int compareTo(Ranking ranking) {
+	public int compareTo(RankingDecider ranking) {
 		if(this.pointsInLoop!=ranking.getPointsInLoop()) {
 			return this.pointsInLoop-ranking.getPointsInLoop();
 		}else {

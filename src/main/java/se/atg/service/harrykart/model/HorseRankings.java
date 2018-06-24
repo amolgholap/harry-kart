@@ -1,6 +1,6 @@
 package se.atg.service.harrykart.model;
 
-public class RankingResponse{
+public class HorseRankings{
 
 	private int position;
 	private String horse;

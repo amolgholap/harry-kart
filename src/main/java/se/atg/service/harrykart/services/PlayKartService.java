@@ -1,9 +1,10 @@
 package se.atg.service.harrykart.services;
 
+import se.atg.service.harrykart.Exception.HarrysKartException;
 import se.atg.service.harrykart.model.HarryKart;
-import se.atg.service.harrykart.model.RankingKart;
+import se.atg.service.harrykart.model.Response;
 
 public interface PlayKartService {
 
-	public RankingKart getRanking(HarryKart harryKart);
+	public Response getRanking(HarryKart harryKart) throws HarrysKartException;
 }
