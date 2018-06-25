@@ -15,7 +15,6 @@ import se.atg.service.harrykart.model.Loop;
 import se.atg.service.harrykart.model.RankingDecider;
 import se.atg.service.harrykart.model.RankingKartResponse;
 import se.atg.service.harrykart.model.Response;
-import se.atg.service.harrykart.rest.HarryKartController;
 import se.atg.service.harrykart.services.PlayKartService;
 
 @Service
