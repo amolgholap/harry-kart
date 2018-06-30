@@ -26,15 +26,7 @@ public class RankingDecider implements Comparable<RankingDecider>{
 		}else {
 		return this.points-ranking.getPoints();}
 	}
-	@Override
-	public boolean equals(Object o) {
-		return true;
-	}
 	
-	@Override
-	public int hashCode() {
-		return horse.hashCode();
-	}
 	public int getLane() {
 		return lane;
 	}
