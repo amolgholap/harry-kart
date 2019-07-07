@@ -1,0 +1,11 @@
+spring:
+  profiles.active: harryKart
+
+harryKart.listToBeDisplay: 3
+---
+spring:
+  profiles: haryyKart
+
+security:
+  basic:
+    enabled: false
